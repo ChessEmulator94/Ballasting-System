@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ballistingsystem"
+version = "0.1.0"
+description = "Tool for monitoring which parts of a ballisting system are connected to other parts when certain valves are open and closed"
+authors = ["Gadi Friedman <guppiefriedman@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mypy = "^1.8.0"
+black = "^24.1.1"
+ruff = "^0.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

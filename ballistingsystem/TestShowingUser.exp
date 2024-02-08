@@ -1,0 +1,25 @@
+#!/usr/bin/expect
+
+# Define the user inputs
+set input1 "1"
+set input2 "valves008,valves024"
+set input3 "3"
+set input4 "pipes001"
+set input5 "pipes016"
+set input6 "5"
+
+# Run the Python program and pass the inputs
+spawn python3 driver.py
+expect "Enter input 1:"
+send "$input1\r"
+expect "Enter input 2:"
+send "$input2\r"
+expect "Enter input 3:"
+send "$input3\r"
+expect "Enter input 4:"
+send "$input4\r"
+expect "Enter input 5:"
+send "$input5\r"
+expect "Enter input 6:"
+send "$input6\r"
+interact
